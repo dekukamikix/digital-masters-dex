@@ -1,0 +1,64 @@
+.font { font-family: "Comic Sans MS" }
+div.header {
+ 	background-color: #6f6f6f;
+	position: sticky;
+	padding: 30px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	color: white;
+}
+.fonthead {
+	font-weight: bolder;
+}
+p.padding{
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: white;
+	background-color: #666;
+	text-align: center;
+}
+body {
+	margin: 0;
+	padding-bottom: 6rem; 
+	min-height: 100%; 
+	position:relative;
+}
+section:after {
+	content: "";
+	display: table;
+  	clear: both;
+  	height: auto;
+}
+		ul.sidenav {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 30px;
+  			width: 10%;
+  			background-color: #f1f1f1;
+  			position: absolute;
+			height: 95%;
+  			overflow: auto;
+		}
+		div.content {
+  			margin-left: 15%;
+  			padding: 1px 16px;
+  			height: auto;
+		}
+		th, td {
+			padding: 8px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		tr:hover {background-color:#e5e5e5;}
+		@media (max-width: 600px) {
+  			nav, article {
+    			width: 100%;
+    			height: auto;
+  			}
+  	}
