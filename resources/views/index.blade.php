@@ -4,21 +4,28 @@
 	<title>Digimons - @yield('judul')</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/index.css')}}">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body class="font">
 	<div class="header">
-		<p style="font-size: 25px">Digimon Masters - DigiDex</p>
-		<p>@yield('judul')</p>
+		<div class="container">
+			<p style="font-size: 25px">Digimon Masters - DigiDex</p>
+			<p>@yield('judul')</p>
+		</div>
 	</div>
 	<ul class="sidenav">
-		<li><a href="digimons">List</a></li>
-		<li><a href="shardscalculations">Kalkulasi</a></li>
-		<li><a href="abo ut">Tentang</a></li>
+		<div class="container">
+			<li><a href="digimons">List</a></li>
+			<li><a href="shardscalculations">Kalkulasi</a></li>
+			<li><a href="abo ut">Tentang</a></li>
+		</div>
 	</ul>
 
 	@yield('content')
 
 	<footer>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript">
 		var f1 = 10
@@ -29,7 +36,7 @@
 				var devolutionId = $(this).val();
 				 // AJAX request 
          $.ajax({
-           url: 'http://localhost:8000/evolutionList/'+devolutionId,
+           url: 'http://127.0.0.1/test/evolutionList/'+devolutionId,
            type: 'GET',
            dataType: 'json',
            success: function(response){
