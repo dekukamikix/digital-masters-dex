@@ -20,6 +20,8 @@ Route::get('/shardscalculations', 'DigimonsController@calculate');
 Route::get('/about', 'DigimonsController@tentang');
 Route::get('/evolutionList/{id}', 'DigimonsController@evolution');
 
+Route::get('/skilldata/{id}', 'DigiSkillController@index');
+
 
 
 

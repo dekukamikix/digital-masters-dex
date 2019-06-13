@@ -16,9 +16,9 @@
 	</div>
 	<div class="sidenav" id="sidemenu">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="digimons">List</a>
-		<a href="shardscalculations">Kalkulasi</a>
-		<a href="about">Tentang</a>
+		<a href="/digital-masters-dex/digimons">List</a>
+		<a href="/digital-masters-dex/shardscalculations">Kalkulasi</a>
+		<a href="/digital-masters-dex/about">Tentang</a>
 	</div>
 
 	<div id="main">
@@ -36,5 +36,6 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{{asset('public/js/dropdownscript.js')}}"></script>
 	<script type="text/javascript" src="{{asset('public/js/sidemenu.js')}}"></script>
+	<script type="text/javascript" src="{{asset('public/js/selectrow.js')}}"></script>
 </body>
 </html>
