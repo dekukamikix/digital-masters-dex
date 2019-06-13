@@ -4,7 +4,7 @@
 @section('content')
 	<div class="content" id="main">
 		<div class="container" style="padding-top: 20px;">
-		<table style="border-collapse: collapse; width: 50%">
+		<table id="table" class="table table-hover" style="cursor: pointer; border-collapse: collapse; width: 50%">
 			<tr>
 				<th>Nama Digimon</th>
 				<th>Bintang</th>

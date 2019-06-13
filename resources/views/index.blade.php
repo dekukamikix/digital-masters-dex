@@ -3,7 +3,7 @@
 <head>
 	<title>Digimons - @yield('judul')</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="{{asset('css/index.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/css/index.css')}}">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -20,13 +20,7 @@
 		<a href="shardscalculations">Kalkulasi</a>
 		<a href="about">Tentang</a>
 	</div>
-	<!-- <ul class="sidenav">
-		<div class="container">
-			<li><a href="digimons">List</a></li>
-			<li><a href="shardscalculations">Kalkulasi</a></li>
-			<li><a href="abo ut">Tentang</a></li>
-		</div>
-	</ul> -->
+
 	<div id="main">
 		@yield('content')
 	</div>
@@ -40,7 +34,7 @@
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="{{asset('js/dropdownscript.js')}}"></script>
-		<script src="{{asset('js/sidemenu.js')}}"></script>
+	<script type="text/javascript" src="{{asset('public/js/dropdownscript.js')}}"></script>
+	<script type="text/javascript" src="{{asset('public/js/sidemenu.js')}}"></script>
 </body>
 </html>
