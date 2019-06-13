@@ -22,6 +22,9 @@ Route::get('/evolutionList/{id}', 'DigimonsController@evolution');
 
 Route::get('/skilldata/{id}', 'DigiSkillController@index');
 
+Route::get('/input_evo', 'DigiInputController@evolution');
+Route::get('/input_skill', 'DigiInputController@skill');
+Route::get('/input_digi', 'DigiInputController@digimon');
 
 
 
