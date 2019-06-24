@@ -7,6 +7,7 @@ var f1 = 10
 				 // AJAX request 
          $.ajax({
            url: 'http://127.0.0.1/test/evolutionList/'+devolutionId,
+           url: 'http://127.0.0.1/digital-masters-dex/evolutionList/'+devolutionId,
            type: 'GET',
            dataType: 'json',
            success: function(response){
